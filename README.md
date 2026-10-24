@@ -36,6 +36,16 @@ The contract was deployed to the Ethereum Sepolia test network.
 
 Sepolia is a test network. The NFT is a testnet asset and does not represent ownership of a real-world asset or have an implied monetary value.
 
+
+## Design Choices
+
+- **ERC-721:** I chose this standard because it is designed for non-fungible tokens, where each token has a unique identity.
+- **Ethereum Sepolia:** I used a public Ethereum test network to deploy and demonstrate the NFT without spending real ETH.
+- **IPFS:** I stored the artwork and its metadata on IPFS so they can be referenced using content identifiers rather than relying only on a centralized server.
+- **Minimalist artwork:** I chose a minimalist, gold-accented design to create a distinctive digital artwork centered on the number 42.
+- **OpenZeppelin:** I used established ERC-721 and ownership implementations rather than writing the core token standard from scratch.
+
+
 ## Smart Contract Design
 
 The contract is implemented in `code/TokenizeArtNFT.sol` using Solidity and OpenZeppelin contracts.
